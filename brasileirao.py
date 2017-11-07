@@ -59,9 +59,9 @@ class Rodada(Base):
         return self.atual
 
 
-class Equipe(Base):
-    def __repr__(self):
-        return self.nome
+#class Equipe(Base):
+#    def __repr__(self):
+#        return self.nome
 
 class EquipeID(Base):
     def __repr__(self):
@@ -71,7 +71,7 @@ class EquipeNomeComum(Base):
     def __repr__(self):
         return self.nome-comum
 
-class EquipeNomeSlug(Base):
+class Equipe(Base):
     def __repr__(self):
         return self['nome-slug']
 
