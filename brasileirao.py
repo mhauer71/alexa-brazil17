@@ -63,6 +63,17 @@ class Equipe(Base):
     def __repr__(self):
         return self.nome
 
+class EquipeID(Base):
+    def __repr__(self):
+        return self.id
+
+class EquipeNomeComum(Base):
+    def __repr__(self):
+        return self.nome-comum
+
+class EquipeNomeSlug(Base):
+    def __repr__(self):
+        return self.nome-slug
 
 class Campeonato:
     URL = ('http://jsuol.com.br/c/monaco/utils/gestor/commons.js?callback='
