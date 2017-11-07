@@ -14,7 +14,7 @@ setup(
     author='Anderson Lima',
     author_email='anderson.sl93@hotmail.com',
     license="MIT",
-    py_modules=['brasileirao', 'utils'],
+    py_modules=['lambda_function','brasileirao', 'utils'],
     platforms='any',
     url='https://github.com/TheKiller666/python-brasileirao',
     install_requires=[
