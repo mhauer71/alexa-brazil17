@@ -107,7 +107,7 @@ class Campeonato:
             )
             self.nome_completo = self._json['nome-completo']
             for k, v in self._json['equipes'].items():
-                self.equipes[k] = EquipeNomeSlug(v)
+                self.equipes[k] = Equipe(v)
             fases = self._json['fases']['2528']
             self.rodada = Rodada(fases['rodada'])
             for e, d in fases['classificacao']['equipe'].items():
