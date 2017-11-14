@@ -73,7 +73,8 @@ class EquipeNomeComum(Base):
 
 class Equipe(Base):
     def __repr__(self):
-        return self['nome-slug']
+        return (self.tag).text.rsplit(' ', 1)[0].encode("utf-8")
+        #return self['nome-slug']
 
 class Campeonato:
     URL = ('http://jsuol.com.br/c/monaco/utils/gestor/commons.js?callback='
