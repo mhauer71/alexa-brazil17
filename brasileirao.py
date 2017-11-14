@@ -73,7 +73,7 @@ class EquipeNomeComum(Base):
 
 class Equipe(Base):
     def __repr__(self):
-        return (self.tag).text.rsplit(' ', 1)[0].encode("utf-8")
+        return (self.tag).rsplit(' ', 1)[0].encode("utf-8")
         #return self['nome-slug']
 
 class Campeonato:
